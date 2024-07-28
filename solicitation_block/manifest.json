@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "⛔勧誘ブロック",
+    "version": "1.0",
+    "description": "サイトの煩わしい勧誘の広告を勝手に削除します。",
+    "permissions": [
+      "activeTab"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": [
+          "https://www.sejuku.net/*",
+          "https://magazine.techacademy.jp/*"
+        ],
+        "js": [
+            "content.js"
+        ]
+      }
+    ]
+  }
