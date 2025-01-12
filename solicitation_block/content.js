@@ -2,7 +2,7 @@
 if (window.location.host.includes("sejuku.net")) {
     let popup;
     let elements;
-    const removeClasses = ["p-blogParts post_content", "c-widget widget_setting_banner_widget", "footer-banner creative-banner active", "sc_button2"];
+    const removeClasses = ["p-blogParts post_content", "c-widget widget_setting_banner_widget", "footer-banner creative-banner active", "sc_button2", "fv-banner_random"];
 
     console.log("監視を開始します");
     setInterval(() => {
